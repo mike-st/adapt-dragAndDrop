@@ -22,8 +22,8 @@
         <div class="dragAndDrop-draggables-container">
             {{#each _draggableItems}}
             <div class="dragAndDrop-item-draggable-wrapper" style="max-width:{{../_defaultMaxWidth}}px; height:{{../_defaultHeight}}px;">
-                <a href="#" class="dragAndDrop-item-draggable component-item component-item-color item-{{@index}}" data-id="{{id}}">
-                    {{{body}}}
+                <a href="#" class="dragAndDrop-item-draggable component-item component-item-color item-{{@index}}" data-id="{{id}}"><div class="drag-drop-verdict icon"></div> {{!-- ADD CHECKMARK OR X HERE --}}
+                    <img src="{{{body}}}" border="0" /> {{!-- ADD IMAGE TAG HERE --}}
                 </a>
             </div>
             {{/each}}

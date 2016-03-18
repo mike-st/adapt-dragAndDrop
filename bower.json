@@ -1,17 +1,23 @@
 {
   "name": "adapt-dragAndDrop",
+  "framework": "^2.0.0",
   "version": "1.0.0",
   "homepage": "https://github.com/BATraining/adapt-dragAndDrop",
+  "issues": "https://github.com/BATraining/adapt-dragAndDrop/issues",
+  "repository": "git://github.com/BATraining/adapt-dragAndDrop.git",
   "authors": [
     "Himanshu Rajotia <himanshu.rajotia@exultcorp.com>"
   ],
-  "displayName" : "Drag And Drop",
-  "component" : "dragAndDrop",
   "description": "A basic Adapt drag and drop component.",
   "main": "/js/adapt-dragAndDrop.js",
-  "keywords": [
-    "adapt-plugin",
-    "adapt-component"
+  "displayName" : "Drag And Drop",
+  "component" : "dragAndDrop",
+  "assetFields": [
+        "_draggableItems[].body"
   ],
-  "license": "GPLv3"
+  "keywords": [
+        "adapt-plugin",
+        "adapt-component"
+    ],
+    "license": "GPLv3"
 }

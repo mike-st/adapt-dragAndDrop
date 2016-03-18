@@ -77,18 +77,18 @@
     &.show-user-answer {
       .incorrect {
         border-style: solid;
-        border-color: #FF0000;
+        border-color: @red;
       }
       .correct {
         border-style: solid;
-        border-color: #00FF00;
+        border-color: @green;
       }
     }
 
     &.show-correct-answer {
       .dragAndDrop-item-droppable {
         border-style: solid;
-        border-color: #00FF00;
+        border-color: @green;
       }
     }
 
@@ -100,4 +100,80 @@
       }
     }
   }
+}
+
+// CHECKMARKS OR X'S ADDED IN TO COMPONENT
+.dragAndDrop-component .dragAndDrop-inner .dragAndDrop-draggables-container .dragAndDrop-item-draggable-wrapper .drag-drop-verdict {display: none;}
+
+.dragAndDrop-component .dragAndDrop-widget.show-correct-answer .dragAndDrop-item-droppable .drag-drop-verdict, .dragAndDrop-component .dragAndDrop-widget.show-user-answer .correct .drag-drop-verdict {
+    vertical-align: middle;
+    position: relative;
+    display: block;
+    right: 5%;
+    top: 60%;
+    width: 42px;
+    height: 42px;
+    font-size: 32px;
+    line-height: 42px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 100%;
+    margin-top: -42px;
+    float: right;
+    color: #fff;
+    border: 0 solid @green;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    background-color: @green;
+}
+.dragAndDrop-component .dragAndDrop-widget.show-correct-answer .dragAndDrop-item-droppable .drag-drop-verdict:before, .dragAndDrop-component .dragAndDrop-widget.show-user-answer .correct .drag-drop-verdict:before{
+    content: "\e633";
+}
+
+.dragAndDrop-component .dragAndDrop-widget.show-user-answer .incorrect .drag-drop-verdict {
+    vertical-align: middle;
+    position: relative;
+    display: block;
+    right: 5%;
+    top: 60%;
+    width: 42px;
+    height: 42px;
+    font-size: 32px;
+    line-height: 42px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 100%;
+    margin-top: -42px;
+    float: right;
+    color: #fff;
+    border: 0 solid @red;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    background-color: @red;
+}
+.dragAndDrop-component .dragAndDrop-widget.show-user-answer .incorrect .drag-drop-verdict:before {
+    content: "\e634";
+}
+
+.dragAndDrop-component .dragAndDrop-inner .dragAndDrop-draggables-container .dragAndDrop-item-draggable-wrapper, .dragAndDrop-component .dragAndDrop-inner .dragAndDrop-droppables-container .dragAndDrop-item-droppable {text-align: center;}
+
+.dragAndDrop-item-draggable img {
+    width: auto !important;
+    height: 100% !important;
+    vertical-align: middle !important;
+    text-align: center;
+}
+
+@media all and (max-width:@device-width-medium){
+    .dragAndDrop-component .dragAndDrop-inner .dragAndDrop-draggables-container {width: 49%;}
+    .dragAndDrop-component .dragAndDrop-inner .dragAndDrop-draggables-container .dragAndDrop-item-draggable-wrapper {max-width: 180px !important; height: 180px !important; width: auto !important;}
+    .dragAndDrop-component .dragAndDrop-inner .dragAndDrop-droppables-container .dragAndDrop-item-droppable {max-width: 180px !important; height: 180px !important; width: auto !important;}
+    .dragAndDrop-component .dragAndDrop-inner .dragAndDrop-dummy {max-width: 180px !important; height: 180px !important; width: auto !important;}
+    .dragAndDrop-component .dragAndDrop-widget.show-correct-answer .dragAndDrop-item-droppable .drag-drop-verdict, .dragAndDrop-component .dragAndDrop-widget.show-user-answer .correct .drag-drop-verdict, .dragAndDrop-component .dragAndDrop-widget.show-user-answer .incorrect .drag-drop-verdict {right: 15%;}
+}
+
+@media all and (max-width:@device-width-small){
+    .dragAndDrop-component .dragAndDrop-inner .dragAndDrop-draggables-container {width: 48%;}
+    .dragAndDrop-component .dragAndDrop-inner .dragAndDrop-draggables-container .dragAndDrop-item-draggable-wrapper {max-width: 100px !important; height: 100px !important; width: auto !important;}
+    .dragAndDrop-component .dragAndDrop-inner .dragAndDrop-droppables-container .dragAndDrop-item-droppable {max-width: 100px !important; height: 100px !important; width: auto !important;}
+    .dragAndDrop-component .dragAndDrop-inner .dragAndDrop-dummy {max-width: 100px !important; height: 100px !important; width: auto !important;}
+    .dragAndDrop-component .dragAndDrop-widget.show-correct-answer .dragAndDrop-item-droppable .drag-drop-verdict, .dragAndDrop-component .dragAndDrop-widget.show-user-answer .correct .drag-drop-verdict, .dragAndDrop-component .dragAndDrop-widget.show-user-answer .incorrect .drag-drop-verdict {right: 10%;}
 }
