@@ -11,5 +11,5 @@ Usage
 -----
 Once installed, the component can be used as a drag and drop question component.
 
-For example JSON format, see<br/>
+Here is an example... <br/>
 <img src="https://raw.githubusercontent.com/mike-st/adapt-dragAndDrop/master/drag-ndrop-screenshot.png" alt="IMAGE ALT TEXT HERE" style="width: 75%; height: auto;" border="10" />
