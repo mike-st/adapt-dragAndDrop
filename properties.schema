@@ -76,7 +76,7 @@
     "_defaultMaxWidth": {
       "type":"number",
       "required":false,
-      "default": 120,
+      "default": 300,
       "title": "Default Maximum Width",
       "inputType": "Number",
       "validators": ["number"]
@@ -84,7 +84,7 @@
     "_defaultHeight": {
       "type":"number",
       "required":false,
-      "default": 120,
+      "default": 300,
       "title": "Default Height",
       "inputType": "Number",
       "validators": ["number"]

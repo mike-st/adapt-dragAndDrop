@@ -102,6 +102,59 @@
   }
 }
 
+//MODIFICATION TO DRAG AND DROP MADE HORIZONAL IN 1366 OR BIGGER
+.dragAndDrop-component.component-full .dragAndDrop-inner .dragAndDrop-draggables-container, .dragAndDrop-component.component-full .dragAndDrop-inner .dragAndDrop-droppables-container {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    text-align: center;
+}
+
+
+.dragAndDrop-component.component-full .dragAndDrop-inner .dragAndDrop-draggables-container .dragAndDrop-item-draggable-wrapper {
+    display: inline-block;
+    border-style: dashed;
+    border-width: thin;
+    margin: 0 auto 2px;
+    vertical-align: middle;
+}
+
+
+.dragAndDrop-component.component-full .dragAndDrop-inner .dragAndDrop-droppables-container .dragAndDrop-item-droppable {
+    display: inline-block;
+    border-style: dashed;
+    border-width: thin;
+    margin: 0 auto 2px;
+    vertical-align: middle;
+    width: 20.6%;
+}
+
+.dragAndDrop-component.component-full .dragAndDrop-inner .dragAndDrop-item-draggable {width: 100%;}
+
+.dragAndDrop-component .dragAndDrop-inner .dragAndDrop-draggables-container .dragAndDrop-item-draggable-wrapper{border-width: inherit !important;}
+
+@media only screen and (max-width: 1280px) {
+    .dragAndDrop-item-draggable-wrapper, .dragAndDrop-item-droppable {max-width: 250px !important; height: 250px !important;}
+    .dragAndDrop-component.component-full .dragAndDrop-inner .dragAndDrop-droppables-container .dragAndDrop-item-droppable {max-width: 250px !important; height: 250px !important; width: 20.4% !important;}
+}
+@media only screen and (max-width: 1024px) {
+    .dragAndDrop-item-draggable-wrapper, .dragAndDrop-item-droppable {max-width: 220px !important; height: 220px !important;} 
+    .dragAndDrop-component.component-full .dragAndDrop-inner .dragAndDrop-droppables-container .dragAndDrop-item-droppable {max-width: 220px !important; height: 220px !important; width: 23.4% !important;}
+}
+
+@media only screen and (max-width: 920px) {
+  .dragAndDrop-component.component-full .dragAndDrop-inner .dragAndDrop-draggables-container, .dragAndDrop-component.component-full .dragAndDrop-inner .dragAndDrop-droppables-container {display: inline-block; width: 49%; vertical-align: top;}
+  .dragAndDrop-component .dragAndDrop-inner .dragAndDrop-draggables-container .dragAndDrop-item-draggable-wrapper {display: block; border-style: dashed; border-width: thin; margin: 0 auto 2px;}
+  .dragAndDrop-component .dragAndDrop-inner .dragAndDrop-droppables-container .dragAndDrop-item-droppable {display: block; border-style: dashed; border-width: thin; margin: 0 auto 2px; width: 100% !important;}
+  .dragAndDrop-item-draggable-wrapper, .dragAndDrop-item-droppable {max-width: 200px !important; height: 200px !important; display: block !important;}
+  .dragAndDrop-component.component-full .dragAndDrop-inner .dragAndDrop-droppables-container .dragAndDrop-item-droppable {max-width: 200px !important; height: 200px !important; width: 100% !important; display: block !important;}
+}
+@media only screen and (max-width: 520px) {
+    .dragAndDrop-component.component-full .dragAndDrop-inner .dragAndDrop-draggables-container, .dragAndDrop-component .dragAndDrop-inner .dragAndDrop-droppables-container {display: inline-block; width: 47%;}
+    .dragAndDrop-component.component-full .dragAndDrop-inner .dragAndDrop-dummy {margin-top: 20%;}
+    .dragAndDrop-component.component-full .dragAndDrop-inner .dragAndDrop-droppables-container .dragAndDrop-item-droppable {max-width: 100px !important; height: 100px !important; width: 100% !important; display: block !important;}
+}
+
 // CHECKMARKS OR X'S ADDED IN TO COMPONENT
 .dragAndDrop-component .dragAndDrop-inner .dragAndDrop-draggables-container .dragAndDrop-item-draggable-wrapper .drag-drop-verdict {display: none;}
 
@@ -124,6 +177,27 @@
     border: 0 solid @green;
     box-shadow: 0 2px 6px rgba(0,0,0,0.4);
     background-color: @green;
+}
+
+.dragAndDrop-component.component-full .dragAndDrop-widget.show-correct-answer .dragAndDrop-item-droppable .drag-drop-verdict, .dragAndDrop-component .dragAndDrop-widget.show-user-answer .correct .drag-drop-verdict {
+    vertical-align: middle;
+    position: relative;
+    display: block;
+    top: 60%;
+    width: 42px;
+    height: 42px;
+    font-size: 32px;
+    line-height: 42px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 100%;
+    margin-top: -42px;
+    color: #fff;
+    border: 0 solid @green;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    background-color: @green;
+    right: 0%;
+    float: left;
 }
 .dragAndDrop-component .dragAndDrop-widget.show-correct-answer .dragAndDrop-item-droppable .drag-drop-verdict:before, .dragAndDrop-component .dragAndDrop-widget.show-user-answer .correct .drag-drop-verdict:before{
     content: "\e633";
@@ -148,6 +222,26 @@
     border: 0 solid @red;
     box-shadow: 0 2px 6px rgba(0,0,0,0.4);
     background-color: @red;
+}
+.dragAndDrop-component.component-full .dragAndDrop-widget.show-user-answer .incorrect .drag-drop-verdict {
+    vertical-align: middle;
+    position: relative;
+    display: block;
+    top: 60%;
+    width: 42px;
+    height: 42px;
+    font-size: 32px;
+    line-height: 42px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 100%;
+    margin-top: -42px;
+    color: #fff;
+    border: 0 solid @red;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    background-color: @red;
+    right: 0%;
+    float: left;
 }
 .dragAndDrop-component .dragAndDrop-widget.show-user-answer .incorrect .drag-drop-verdict:before {
     content: "\e634";

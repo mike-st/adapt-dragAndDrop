@@ -31,7 +31,8 @@ define(function(require) {
             if (Adapt.device.screenSize == 'large') {
                 this.render();
             } else {
-                this.reRender();
+                //this.reRender();
+                this.render();
             }
         },
 
