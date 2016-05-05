@@ -1,6 +1,6 @@
 # adapt-dragAndDrop
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=g5Zd7Zja_go" target="_blank"><img src="http://img.youtube.com/vi/g5Zd7Zja_go/3.jpg" alt="IMAGE ALT TEXT HERE" width="500" height="375" border="10" /><br/>CLICK ABOVE TO WATCH THE YOUTUBE VIDEO</a>
+<a href="https://www.youtube.com/embed/8sUeU69uQrA" target="_blank"><img src="http://img.youtube.com/vi/g5Zd7Zja_go/3.jpg" alt="IMAGE ALT TEXT HERE" width="500" height="375" border="10" /><br/>CLICK ABOVE TO WATCH THE YOUTUBE VIDEO</a>
 
 Installation
 ------------
