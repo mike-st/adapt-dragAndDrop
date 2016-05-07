@@ -321,7 +321,7 @@ define(function(require) {
                     droppableItems[currentDragIndex]._selectedItemId = existingDragItemId;
                 }
             } else if ($currentDragedItemContainer.hasClass('dragAndDrop-item-droppable')) {
-                $currentDragedItemContainer.html(droppableItems[currentDragIndex].body);
+                $currentDragedItemContainer.html(droppableItems[currentDragIndex].words);
                 delete droppableItems[currentDragIndex]['_selectedItemId'];
             }
 

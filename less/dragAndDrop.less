@@ -127,6 +127,8 @@
     margin: 0 auto 2px;
     vertical-align: middle;
     width: 20.6%;
+    font-weight: bold;
+    text-shadow: -2px -2px 2px #fff, 2px -2px 2px #fff, -2px 2px 2px #fff, 2px 2px 2px #fff;
 }
 
 .dragAndDrop-component.component-full .dragAndDrop-inner .dragAndDrop-item-draggable {width: 100%;}
@@ -177,6 +179,7 @@
     border: 0 solid @green;
     box-shadow: 0 2px 6px rgba(0,0,0,0.4);
     background-color: @green;
+    text-shadow: none !important;
 }
 
 .dragAndDrop-component.component-full .dragAndDrop-widget.show-correct-answer .dragAndDrop-item-droppable .drag-drop-verdict, .dragAndDrop-component .dragAndDrop-widget.show-user-answer .correct .drag-drop-verdict {
@@ -198,6 +201,7 @@
     background-color: @green;
     right: 0%;
     float: left;
+    text-shadow: none !important;
 }
 .dragAndDrop-component .dragAndDrop-widget.show-correct-answer .dragAndDrop-item-droppable .drag-drop-verdict:before, .dragAndDrop-component .dragAndDrop-widget.show-user-answer .correct .drag-drop-verdict:before{
     content: "\e633";
@@ -222,6 +226,7 @@
     border: 0 solid @red;
     box-shadow: 0 2px 6px rgba(0,0,0,0.4);
     background-color: @red;
+    text-shadow: none !important;
 }
 .dragAndDrop-component.component-full .dragAndDrop-widget.show-user-answer .incorrect .drag-drop-verdict {
     vertical-align: middle;
@@ -242,6 +247,7 @@
     background-color: @red;
     right: 0%;
     float: left;
+    text-shadow: none !important;
 }
 .dragAndDrop-component .dragAndDrop-widget.show-user-answer .incorrect .drag-drop-verdict:before {
     content: "\e634";
@@ -254,6 +260,7 @@
     height: 100% !important;
     vertical-align: middle !important;
     text-align: center;
+    background: @white;
 }
 
 @media all and (max-width:@device-width-medium){

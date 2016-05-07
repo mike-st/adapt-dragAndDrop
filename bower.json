@@ -13,7 +13,8 @@
   "displayName" : "Drag And Drop",
   "component" : "dragAndDrop",
   "assetFields": [
-        "_draggableItems[].body"
+        "_draggableItems[].body",
+        "_droppableItems[].body"
   ],
   "keywords": [
         "adapt-plugin",

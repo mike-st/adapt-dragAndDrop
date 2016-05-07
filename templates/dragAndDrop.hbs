@@ -30,8 +30,8 @@
         </div>
         <div class="dragAndDrop-droppables-container">
             {{#each _droppableItems}}
-            <div class="dragAndDrop-item-droppable {{#unless ../_isEnabled}} {{#if _isCorrect}} correct{{else}} incorrect{{/if}} {{/unless}}" style="max-width:{{../_defaultMaxWidth}}px; height:{{../_defaultHeight}}px;" data-id="{{id}}">
-                {{{body}}}
+            <div id="thedrop" class="dragAndDrop-item-droppable {{#unless ../_isEnabled}} {{#if _isCorrect}} correct{{else}} incorrect{{/if}} {{/unless}}" style="background-image: url( {{{body}}} ); -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-size: contain; background-position: center center; background-repeat: no-repeat; max-width:{{../_defaultMaxWidth}}px; height:{{../_defaultHeight}}px;" data-id="{{id}}">
+               {{{words}}}
             </div>
             {{/each}}
         </div>

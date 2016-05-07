@@ -106,14 +106,22 @@
             "validators": [],
             "help": "increase the number as you add more items (ex. drop-02) would be the next draggable item ID"
           },
-          "body": {
+          "words": {
             "type":"string",
             "required":false,
             "default": "",
-            "title": "Body copy that goes inside the droppable area",
+            "title": "Inserts Droppable Title or text",
             "inputType": "Text",
             "validators": [],
-            "help": "Not much text can fit so use no more than 3 words"
+            "help": "You can place Droppable title or text here. It will display at the top of the box."
+          },
+          "body": {
+            "type": "string",
+            "required": false,
+            "default": "",
+            "inputType": "Asset:image",
+            "validators": ["required"],
+            "help": "This is where the background image path is placed."
           },
           "correctItemId": {
             "type":"string",
