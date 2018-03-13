@@ -1,6 +1,6 @@
 {
   "name": "adapt-dragAndDrop",
-  "framework": "^2.0.0",
+  "framework": ">=2.0.9",
   "version": "1.0.0",
   "homepage": "https://github.com/BATraining/adapt-dragAndDrop",
   "issues": "https://github.com/BATraining/adapt-dragAndDrop/issues",
